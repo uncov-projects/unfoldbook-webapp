@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import { useAuth } from '../context/AuthContext';
+import AuthButtons from './GoogleLogin';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -67,6 +68,7 @@ const {login}=useAuth();
         </button>
       </form>
 
+<AuthButtons/>
      
     </div>
   );
